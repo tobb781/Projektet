@@ -1,3 +1,14 @@
+:root {
+    --color-main-bg: #fff;
+    --color-pri: #12151c;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-category-one: #1b222c;
+    --color-category-two: #1b661f;
+    --color-category-three: #15531a;
+    --color-caregory-four: #191d26;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +16,15 @@
 
 body {
     display: grid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 header {
@@ -23,4 +43,32 @@ header {
 header img {
     height: 100px;
     width: 300px;
+    margin-left: 8rem;
+}
+
+footer {
+
+    background-color: var(--color-category-one);
+    color: var(--color-white);
+}
+
+.footerWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 50px 8rem;
+    grid-template-rows: minmax(150px, auto);
+}
+
+.footerBox {
+    position: relative;
+}
+
+.footerBox::before {
+    content: '';
+    height: 7px;
+    width: 3rem;
+    background-color: var(--color-white);
+    top: -10px;
+    left: 1px;
+    position: absolute;
 }
