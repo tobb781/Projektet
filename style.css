@@ -1,9 +1,9 @@
 :root {
     --color-main-bg: #fff;
-    --color-pri: #12151c;
+    --color-pri: #566459;
     --color-white: #fff;
     --color-black: #000;
-    --color-category-one: #1b222c;
+    --color-category-one: #566459;
     --color-category-two: #1b661f;
     --color-category-three: #15531a;
     --color-caregory-four: #191d26;
@@ -16,6 +16,9 @@
 
 body {
     display: grid;
+    background-color: var(--color-main-bg);
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,10 +30,13 @@ p {
     font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+/*HEADER*/
+
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: center;
+    background-color: var(--color-pri);
 }
 
 .navList {
@@ -46,17 +52,21 @@ header img {
     margin-left: 8rem;
 }
 
-footer {
+/*MAIN*/
 
-    background-color: var(--color-category-one);
+/*FOOTER*/
+
+footer {
+    background-color: var(--color-pri);
     color: var(--color-white);
 }
 
 .footerWrapper {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 50px 8rem;
     grid-template-rows: minmax(150px, auto);
+    grid-gap: 10px;
 }
 
 .footerBox {
@@ -71,4 +81,26 @@ footer {
     top: -10px;
     left: 1px;
     position: absolute;
+}
+
+.footerBox ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.footerBox i {
+    transition: all .2s ease-in-out; 
+}
+
+.footerBox i:hover {
+    transform: scale(1.1);
+}
+
+.footerBox p {
+    padding-top: 20px;
 }
