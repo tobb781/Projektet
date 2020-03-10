@@ -87,14 +87,15 @@ footer {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 20px;
+    margin: 20px 0px;
     text-align: center;
     font-size: 3rem;
     
 }
 
 .footerBox i {
-    transition: all .2s ease-in-out; 
+    transition: all .1s ease-in-out; 
+    color: var(--color-white);
 }
 
 .footerBox i:hover {
@@ -103,4 +104,17 @@ footer {
 
 .footerBox p {
     padding-top: 20px;
+}
+
+/*BREAKPOINTS*/
+
+@media only screen and (max-width: 1300px){
+    .footerBox ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 1300px){
+    
 }
