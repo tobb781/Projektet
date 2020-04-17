@@ -34,43 +34,58 @@ p {
 /*HEADER*/
 
 header {
-    padding-left: 8rem;
-    padding-right: 8rem;
-    display: grid;
-    grid-template-columns: minmax(100px, 300px) 1fr;
-    grid-column-gap: 500px;
-    justify-content: center;
+    /*padding-left: 8rem;
+    padding-right: 8rem;*/
     background-color: var(--color-pri);
 }
 
-.navList {
+nav {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-    list-style-type: none;
-    height: 100%;
+    grid-template-rows: minmax(min-content, 100px) min-content;
 }
 
-.navList a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 1.5rem;
-    
+nav .content {
+    background-color: var(--color-pri);
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    align-content: space-evenly;
 }
 
-.navList li:hover {
-    transform: scale(1.2);
+nav .content .menu {
+    display: none;
 }
 
-.navList li {
-    align-self: center;
-    justify-self: right;
-    transition: all .3s ease-in-out; 
+nav .content .menu:hover {
+    filter: opacity(50%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-header img {
-    width: 100%;
-    padding: 10px;
+nav .content .links {
+    display: grid;
+    grid-gap: 15px;
+    grid-auto-flow: column;
+    /*grid-auto-columns: minmax(min-content, 90px);*/
+    place-items: center;
+}
+
+nav .dropdown {
+    display: grid;
+    background-color: darkgrey;
+    text-align: center;
+    display: none;
+}
+
+nav .dropdown a {
+    color: white;
+    padding: 40px;
+}
+
+nav .dropdown a:hover {
+    color: green;
+    background-color: #fff;
 }
 
 /*MAIN*/
@@ -139,9 +154,12 @@ footer {
 /*IPAD I GUESS*/
 @media only screen and (max-width: 800px){
     /*HEADER*/
-    header  {
+    /*header  {
         padding-left: 2rem;
     }
+    */
+    nav .content .menu {display: initial;}
+    nav .content .links {display: none;}
 
     /*MAIN*/
 

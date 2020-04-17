@@ -13,17 +13,49 @@
 
 <body>
     <header>
-        <img src="../images/placeholder.png" alt="">
-
         <nav class="globalNav">
-            <ul class="navList">
-                <li class="navItem"><a href="#">Norge</a></li>
-                <li class="navItem"><a href="#">Sverige</a></li>
-                <li class="navItem"><a href="#">Finland</a></li>
-                <li class="navItem"><a href="#">Danmark</a></li>
-            </ul>
+            <div class="content">
+                <h1>Placeholder</h1>
+                <div class="links">
+                    <a href="">Norge</a>
+                    <a href="">Sverige</a>
+                    <a href="">Finland</a>
+                    <a href="">Danmark</a>
+                </div>
+                <i class="fas fa-bars menu" onclick="menu()"></i>
+            </div>
+            <div class="dropdown">
+                <a href="">Norge</a>
+                <a href="">Sverige</a>
+                <a href="">Finland</a>
+                <a href="">Danmark</a>
+            </div>
         </nav>
     </header>
+
+    <script>
+        var dropdown = document.querySelector("nav .dropdown");
+        var button = document.querySelector("nav .menu");
+
+        function menu() {
+            if (dropdown.style.display === "grid") {
+                dropdown.style.display = "none";
+                button.innerHTML = "menu";
+            } else {
+                dropdown.style.display = "grid";
+                button.innerHTML = "close";
+            }
+        }
+
+        addEventListener("resize", function () {
+            if (window.innerWidth > 700) {
+                dropdown.style.display = "none";
+                button.innerHTML = "menu";
+            }
+        } )
+
+    </script>
+    
     <main class="">
         <p>lorem5000</p>
     </main>
