@@ -3,7 +3,7 @@
     --color-pri: #566459;
     --color-white: #fff;
     --color-black: #000;
-    --color-category-one: #566459;
+    --color-category-one: #3c463e;
     --color-category-two: #1b661f;
     --color-category-three: #15531a;
     --color-caregory-four: #191d26;
@@ -22,7 +22,7 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, li {
+h1, h2, h3, h4, h5, h6, li, a {
     font-family: 'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 900;
 }
@@ -52,12 +52,22 @@ nav .content {
     align-content: space-evenly;
 }
 
+nav .content a {
+    text-decoration: none;
+}
+
+nav .content h1 {
+    color: var(--color-white);
+    font-size: 3em;
+}
+
 nav .content .menu {
     display: none;
+    color: var(--color-white);
 }
 
 nav .content .menu:hover {
-    filter: opacity(50%);
+    filter: opacity(95%);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -65,27 +75,45 @@ nav .content .menu:hover {
 
 nav .content .links {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 30px;
     grid-auto-flow: column;
     /*grid-auto-columns: minmax(min-content, 90px);*/
     place-items: center;
 }
 
+nav .content .links a {
+    color: var(--color-white);
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+nav .content .links a:hover {
+    transform: scale(1.1);
+}
+
 nav .dropdown {
     display: grid;
-    background-color: darkgrey;
-    text-align: center;
+    background-color: var(--color-pri);
+    text-align: left;
     display: none;
 }
 
 nav .dropdown a {
-    color: white;
-    padding: 40px;
+    color: var(--color-white);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.4em;
+    border-bottom: 1px solid var(--color-category-one);
+}
+
+nav .dropdown a:first-of-type {
+    border-top: 1px solid var(--color-category-one);
 }
 
 nav .dropdown a:hover {
-    color: green;
-    background-color: #fff;
+    color: var(--color-pri);
+    background-color: var(--color-white);
 }
 
 /*MAIN*/
