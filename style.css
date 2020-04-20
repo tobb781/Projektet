@@ -64,10 +64,11 @@ nav .content h1 {
 nav .content .menu {
     display: none;
     color: var(--color-white);
+    font-size: 2rem;
 }
 
 nav .content .menu:hover {
-    filter: opacity(95%);
+    filter: opacity(80%);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -203,4 +204,18 @@ footer {
     .footerBox {
         margin-bottom: 30px;
     }
+}
+
+/*Mobil I GUESS*/
+@media only screen and (max-width: 500px){
+    /*HEADER*/
+    nav .content h1 {
+        font-size: 2em;
+    }
+
+    /*MAIN*/
+
+
+    /*FOOTER*/
+
 }
