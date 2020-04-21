@@ -10,7 +10,6 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/0e1b80b7aa.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="./menu.js"></script>
 </head>
 
 <body>
@@ -36,29 +35,6 @@
             </div>
         </nav>
     </header>
-
-    <script>
-        var dropdown = document.querySelector("nav .dropdown");
-        var button = document.querySelector("nav .menu");
-
-        function menu() {
-            if (dropdown.style.display === "grid") {
-                dropdown.style.display = "none";
-                button.innerHTML = "menu";
-            } else {
-                dropdown.style.display = "grid";
-                button.innerHTML = "close";
-            }
-        }
-
-        addEventListener("resize", function () {
-            if (window.innerWidth > 800) {
-                dropdown.style.display = "none";
-                button.innerHTML = "menu";
-            }
-        })
-
-    </script>
 
     <main class="">
         <p>lorem50000</p>
@@ -91,5 +67,7 @@
         </div>
     </footer>
 </body>
+
+<script src="menu.js"></script>
 
 </html>
