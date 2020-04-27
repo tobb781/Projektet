@@ -16,6 +16,26 @@
     box-sizing: border-box;
 }
 
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--color-pri);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#topBtn:hover {
+    background-color: var(--color-category-one);
+}
+
 body {
     display: grid;
     background-color: var(--color-main-bg);
@@ -119,6 +139,16 @@ nav .dropdown a:hover {
 }
 
 /*MAIN*/
+
+
+/*INDEX.HTML*/
+.main-img {
+    width: 100%;
+    height: 100vh;
+    top: -100px;
+    position: absolute;
+    z-index: -1;
+}
 
 /*FOOTER*/
 
