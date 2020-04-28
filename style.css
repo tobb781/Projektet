@@ -119,6 +119,9 @@ nav .dropdown {
     background-color: var(--color-pri);
     text-align: left;
     display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
 }
 
 nav .dropdown a {
@@ -144,10 +147,12 @@ nav .dropdown a:hover {
 /*INDEX.HTML*/
 .main-img {
     width: 100%;
-    height: 100vh;
-    top: -100px;
-    position: absolute;
-    z-index: -1;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    object-position: 100% 20%;
 }
 
 /*FOOTER*/
