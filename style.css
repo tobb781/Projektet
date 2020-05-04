@@ -147,12 +147,37 @@ nav .dropdown a:hover {
 /*INDEX.HTML*/
 .main-img {
     width: 100%;
-    height: 50%;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
-    object-position: 100% 20%;
+    object-position: center 20%;
+}
+
+.info-norden-wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px 150px;
+}
+
+
+
+.info-norden-box img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.info-norden-box h1 {
+    color: var(--color-pri);
+    font-size: 4em;
+}
+
+.info-norden-box p {
+    color: var(--color-caregory-four);
+    font-size: 1.5em;
 }
 
 /*FOOTER*/
@@ -223,6 +248,18 @@ footer {
     .footerBox ul {
         font-size: 2rem;
     }
+
+    .info-norden-wrapper {
+        margin: 80px 60px;
+    }
+}
+
+/*INDEX IMAGE*/
+@media only screen and (max-width:900px){
+    .main-img {
+        height: 600px;
+        background-position: center center;
+    }
 }
 
 /*IPAD I GUESS*/
@@ -236,6 +273,10 @@ footer {
     nav .content .links {display: none;}
 
     /*MAIN*/
+
+    .info-norden-wrapper {
+        grid-template-columns: 1fr;
+    }
 
 
     /*FOOTER*/
@@ -259,6 +300,22 @@ footer {
     }
 
     /*MAIN*/
+
+    .main-img {
+        height: 400px;
+    }
+
+    .info-norden-wrapper {
+        margin: 40px 20px;
+    }
+
+    .info-norden-box h1 {
+        font-size: 3em;
+    }
+
+    .info-norden-box p {
+        font-size: 1.2em;
+    }
 
 
     /*FOOTER*/
