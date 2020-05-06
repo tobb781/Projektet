@@ -26,7 +26,7 @@
     border: none;
     outline: none;
     background-color: var(--color-pri);
-    color: white;
+    color: var(--color-white);
     cursor: pointer;
     padding: 10px;
     border-radius: 4px;
@@ -124,10 +124,35 @@ nav .content .links a {
     font-size: 1.5em;
     text-decoration: none;
     transition: all .2s ease-in-out;
+    position: relative;
 }
 
 nav .content .links a:hover {
     transform: scale(1.1);
+}
+
+nav .content .links a:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    transition: 0.3s ease;
+}
+
+nav .content .links a:hover:after {
+    border-bottom: 4px solid var(--color-white);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav .content .links .active:after {
+    border-bottom: 4px solid var(--color-white);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
 }
 
 nav .dropdown {
@@ -207,10 +232,29 @@ nav .dropdown a:hover {
     position: relative;
 }
 
+.hover-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: rgb(25, 29, 38, 0.7);
+    font-size: 2.5em;
+    padding: 15px;
+    border-radius: 50%;
+    color: var(--color-pri);
+    border: 3px solid var(--color-pri);
+    opacity: 0%;
+    transition: 0.3s ease;
+}
+
+.info-lander-box:hover .hover-icon {
+    opacity: 100%;
+    scale: 1.05;
+}
+
 .info-lander-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 .info-lander-text-box {
@@ -223,12 +267,20 @@ nav .dropdown a:hover {
 
 .info-lander-text-box h1 {
     font-size: 4em;
+    transition: 0.3s ease;
 }
+
+.info-lander-box:hover h1{
+    color: var(--color-pri);
+}
+
+/* .info-lander-box:hover img {
+    filter: grayscale(80%);
+} */
 
 .info-lander-text-box p {
     font-size: 1.2em;
 }
-
 
 /*FOOTER*/
 
@@ -332,6 +384,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .hover-icon {
+        opacity: 100%;
+    }
+
 
     /*FOOTER*/
     
@@ -374,14 +430,6 @@ footer {
 
     .info-norden-box p {
         font-size: 1.2em;
-    }
-
-    .info-lander-box h1 {
-        font-size: 2.5em;
-    }
-
-    .info-lander-box p {
-        font-size: 1em;
     }
 
     .info-lander-text-box {
