@@ -44,7 +44,7 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, li, a {
+h1, h2, h3, h4, h5, h6, li, a, dl, dt {
     font-family: 'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 900;
 }
@@ -281,6 +281,52 @@ nav .dropdown a:hover {
 .info-lander-text-box p {
     font-size: 1.2em;
 }
+
+/*InfoTemplate*/
+
+.main-land {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 50px 100px;
+}
+
+.statistik-box {
+    /* border: 1px solid #b0b; */
+    width: 300px;
+    grid-column: minmax(1fr, 300px);
+    margin-top: 77px;
+}
+
+.statistik-box dt {
+    font-size: 2em;
+    color: var(--color-pri);
+}
+
+.statistik-box dd {
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+/* .main-land-box {
+    border: 1px solid rgb(255, 0, 0);
+} */
+
+.main-land-box h1 {
+    color: var(--color-pri);
+    font-size: 4em;
+}
+
+.main-land-org-box img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.main-land-org-img {
+    position: relative;
+}
+
+
 
 /*FOOTER*/
 
