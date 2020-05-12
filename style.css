@@ -293,7 +293,6 @@ nav .dropdown a:hover {
 .statistik-box {
     /* border: 1px solid #b0b; */
     width: 300px;
-    grid-column: minmax(1fr, 300px);
     margin-top: 77px;
 }
 
@@ -402,6 +401,15 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1000px){
+    /*InfoTemplate*/
+    
+    .main-land {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+}
+
 /*INDEX IMAGE*/
 @media only screen and (max-width:900px){
     .main-img {
@@ -432,6 +440,12 @@ footer {
 
     .hover-icon {
         opacity: 100%;
+    }
+
+    /*InfoTemplate*/
+
+    .main-land {
+        margin: 0 50px;
     }
 
 
@@ -481,6 +495,23 @@ footer {
     .info-lander-text-box {
         margin: 0 20px; 
     }
+
+        /*InfoTemplate*/
+
+        .main-land {
+            margin: 0 20px;
+        }
+
+        .main-land-org-img {
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+        }
+        .main-land-org-img img {
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+        }
 
 
     /*FOOTER*/
