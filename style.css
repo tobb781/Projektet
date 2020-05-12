@@ -194,9 +194,9 @@ nav .dropdown a:hover {
     background-size: contain;
     object-fit: cover;
     object-position: center 20%;
+    position: relative;
+ 
 }
-
-
 
 .info-norden-wrapper {
     display: grid;
@@ -284,15 +284,22 @@ nav .dropdown a:hover {
 
 /*InfoTemplate*/
 
+.main-title {
+    text-align: center;
+    font-size: 8vw;
+    margin: 20px;
+    color: var(--color-pri);
+    text-transform: uppercase;
+}
+
 .main-land {
     display: grid;
     grid-template-columns: 300px 1fr;
-    margin: 50px 100px;
+    margin: 0 100px;
 }
 
 .statistik-box {
     /* border: 1px solid #b0b; */
-    width: 300px;
     margin-top: 77px;
 }
 
@@ -313,6 +320,10 @@ nav .dropdown a:hover {
 .main-land-box h1 {
     color: var(--color-pri);
     font-size: 4em;
+}
+
+.main-land-box p {
+    font-size: 1.4em;
 }
 
 .main-land-org-box img {
@@ -408,6 +419,10 @@ footer {
         grid-template-columns: 1fr;
         grid-gap: 50px;
     }
+
+    .statistik-box {
+        margin-top: 0;
+    }
 }
 
 /*INDEX IMAGE*/
@@ -502,15 +517,11 @@ footer {
             margin: 0 20px;
         }
 
-        .main-land-org-img {
-            height: auto;
-            width: 100%;
-            max-width: 100%;
+        .main-land-box h1 {
+            font-size: 2.5em;
         }
-        .main-land-org-img img {
-            height: auto;
-            width: 100%;
-            max-width: 100%;
+        .main-land-box p {
+            font-size: 1.2em;
         }
 
 
