@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500,700,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e1b80b7aa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="topBtn" title="Hoppa till toppen av sidan!"
+        class="material-icons menu">arrow_upward</button>
+
+    <header>
+        <nav class="globalNav">
+            <div class="content">
+                <a href="./index.html">
+                    <h1>Nordens Försvar</h1>
+                </a>
+                <div class="links">
+                    <a href="./norge.html" class="active">Norge</a>
+                    <a href="./sverige.html">Sverige</a>
+                    <a href="./finland.html">Finland</a>
+                    <a href="./danmark.html">Danmark</a>
+                </div>
+                <i class="material-icons menu" onclick="menu()">menu</i>
+            </div>
+            <div class="dropdown">
+                <a href="./norge.html">Norge</a>
+                <a href="./sverige.html">Sverige</a>
+                <a href="./finland.html">Finland</a>
+                <a href="./danmark.html">Danmark</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-title">Norge</h1>
+        <div class="main-land">
+            <div class="statistik-box">
+                <dl>
+                    <dt>Namn</dt>
+                    <dd>Placeholder</dd>
+
+                    <dt>Försvarschef</dt>
+                    <dd>Placeholder</dd>
+
+                    <dt>Vapenför ålder</dt>
+                    <dd>Placeholder</dd>
+
+                    <dt>Stående styrkor</dt>
+                    <dd>Placeholder</dd>
+
+                    <dt>Reservstyrkor</dt>
+                    <dd>Placeholder</dd>
+                </dl>
+            </div>
+
+            <div class="main-land-box">
+                <div class="main-land-org-box">
+                    <h1>Armen</h1>
+                    <div class="main-land-org-img">
+                        <img src="/images/sverige-armen.jpg" alt="">
+                        <p class="foto-info">Hejsan</p>
+                    </div>
+                    <p>lorem500</p>
+                </div>
+                <div class="main-land-org-box">
+                    <h1>Flottan</h1>
+                    <div class="main-land-org-img">
+                        <img src="/images/sverige-armen.jpg" alt="">
+                        <p class="foto-info">Hejsan</p>
+                    </div>
+                    <p>hej</p>
+                </div>
+                <div class="main-land-org-box">
+                    <h1>Flygvapnet</h1>
+                    <div class="main-land-org-img">
+                        <img src="/images/sverige-armen.jpg" alt="">
+                        <p class="foto-info">Hejsan</p>
+                    </div>
+                    <p>hej</p>
+                </div>
+                <div class="main-land-org-box">
+                    <h1>Hemvärnet</h1>
+                    <div class="main-land-org-img">
+                        <img src="/images/sverige-armen.jpg" alt="">
+                        <p class="foto-info">Hejsan</p>
+                    </div>
+                    <p>hej</p>
+                </div>
+                <div class="fakta-fel">
+                    <p>Hittar du något faktafel? Var snäll och kontakta mig via någon av länkarna som finns i botten av webbplatsen så jag kan rätta till det.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerWrapper">
+            <div class="footerBox">
+                <h1>Om Webplatsen</h1>
+                <p>Webbplatsen är ett slutprojekt i kursen webbutveckling 1. Den upprättades 2020 av Tobias Janzon
+                    Sjöstedt. <a href="./om-oss.html" class="footerLink">Läs mer om webbplatsen</a>.</p>
+            </div>
+            <div class="footerBox">
+                <h1>Kontakt</h1>
+                <p>Vill du komma i kontakt med mig? Då når du mig lättast via någon av länkarna nedan:</p>
+                <div class="footerIconBox">
+                    <ul>
+                        <li><a href="mailto:tobias2sj@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://www.instagram.com/tobbe112/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100008438473909"><i
+                                    class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBox">
+                <h1>Anknytning</h1>
+                <p>Webbplatsen är inte på något sätt anknuten till någon av dem försvarsmakter den ger information om!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="scrollBtn.js"></script>
+
+</body>
+
+
+</html>
