@@ -15,6 +15,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+  
+::selection, ::-moz-selection {
+    color: var(--color-white);
+    background: var(--color-category-one);
+}
 
 #topBtn {
     display: none;
