@@ -65,6 +65,7 @@ p {
     font-size: 0.5em !important;
     bottom: 10px;
     text-shadow: 2px 2px 2px var(--color-black);
+    margin: 0 !important;
 }
 
 .foto-info::before {
@@ -329,6 +330,10 @@ nav .dropdown a:hover {
 
 .main-land-box p {
     font-size: 1.4em;
+}
+
+.main-land-org-box p{
+    margin-bottom: 20px;
 }
 
 .main-land-org-box img {
